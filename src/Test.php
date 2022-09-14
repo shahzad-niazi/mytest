@@ -20,4 +20,9 @@ class Test {
     {
         echo "this is test";
     }
+
+    public function newTest(): int
+    {
+        return 10;
+    }
 }
