@@ -26,6 +26,6 @@ class testTest extends TestCase {
 
     public function dtest22()
     {
-        $this->assertEquals(22222, $this->service->newTest());
+        $this->assertEquals(22222, $this->service->dtest22());
     }
 }
