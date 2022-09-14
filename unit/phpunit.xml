@@ -1,0 +1,22 @@
+<phpunit bootstrap="../vendor/autoload.php" colors="false">
+    <testsuite name="HSSTests">
+        <directory>./</directory>
+    </testsuite>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">/var/www/mytest/src</directory>
+            <exclude>
+                <directory suffix=".phtml">/var/www/mytest/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <!-- LOGGING AND CODE COVERAGE -->
+    <logging>
+        <log type="junit" target="../build/unit/junit.xml" logIncompleteSkipped="false" />
+        <log type="coverage-clover" target="../build/coverage/clover.xml" />
+        <log type="coverage-text" target="../build/coverage/clover.txt" />
+        <log type="coverage-html" target="../build/coverage/clover.html" />
+    </logging>
+</phpunit>
