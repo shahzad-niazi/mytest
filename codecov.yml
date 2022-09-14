@@ -19,15 +19,11 @@ coverage:
         if_ci_failed: error
         informational: false
         only_pulls: false
-
-coverage:
-  status:
     patch:
       default:
-        # basic
         target: 80%
         threshold: 0%
-        base: auto 
-        # advanced
-        if_ci_failed: error #success, error
+        # advanced settings
+        if_ci_failed: error
+        informational: false
         only_pulls: false
