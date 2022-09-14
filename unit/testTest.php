@@ -19,7 +19,7 @@ class testTest extends TestCase {
         $this->assertEquals(1, $this->service->getTest());
     }
 
-    public function testNewTest(): int
+    public function testNewTest()
     {
         $this->assertEquals(10, $this->service->newTest());
     }
