@@ -5,9 +5,9 @@
 
     <filter>
         <whitelist>
-            <directory suffix=".php">/var/www/mytest/src</directory>
+            <directory suffix=".php">/var/www/mytest2/src</directory>
             <exclude>
-                <directory suffix=".phtml">/var/www/mytest/</directory>
+                <directory suffix=".phtml">/var/www/mytest2</directory>
             </exclude>
         </whitelist>
     </filter>
