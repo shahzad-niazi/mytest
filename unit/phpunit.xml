@@ -3,14 +3,11 @@
         <directory>./</directory>
     </testsuite>
 
-    <filter>
-        <whitelist>
-            <directory suffix=".php">/var/www/mytest2/src</directory>
-            <exclude>
-                <directory suffix=".phtml">/var/www/mytest2</directory>
-            </exclude>
-        </whitelist>
-    </filter>
+    <coverage>
+        <include>
+            <directory>./src</directory>
+        </include>
+    </coverage>
 
     <!-- LOGGING AND CODE COVERAGE -->
     <logging>
