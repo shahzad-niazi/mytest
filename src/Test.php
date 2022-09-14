@@ -25,4 +25,9 @@ class Test {
     {
         return 10;
     }
+
+    public function dtest22(): int
+    {
+        return 22222;
+    }
 }
