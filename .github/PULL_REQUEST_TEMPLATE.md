@@ -1,3 +1,5 @@
+<!--Describe this change in simple words. Explain what the change is, and why the change is necessary, with enough context so even people not on your team can understand the change. If relevant add screenshots. -->
+
 # Description
 ### Background:
 ### ChangeLog:
@@ -5,7 +7,6 @@
 
 ▶️ **Insert link to JIRA ticket here, if relevant** ◀️
 
-<!--Describe this change in simple words. Explain what the change is, and why the change is necessary, with enough context so even people not on your team can understand the change. If relevant add screenshots. -->
 
 # Type of change
 
