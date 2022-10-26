@@ -16,6 +16,7 @@
 - [ ] Breaking change (fix or feature that would cause existing functionality to work differently)
 - [ ] configuration-only change (only change config parameters)
 - [ ] refactor-only change (does not change code behavior) 
+- [ ] Does this contain DB change
 
 # Author Checklist:
 
@@ -27,7 +28,6 @@
 - [ ] PR title follow the convention `JIRA-123: Short description` (**if it is not, fix commit message also**)
 - [ ] Change has been documented in the description section. 
 - [ ] Code has tests: unit, integration, and browser, as appropriate
-- [ ] Change is behind a feature flag (or can be deployed without a toggle). If not possible explain why in description
 - [ ] Code is commented, particularly in hard-to-understand areas
 - [ ] Variables, functions, classes, objects, and methods are named clearly
 - [ ] Readme and changelog updated with corresponding changes, as appropriate
