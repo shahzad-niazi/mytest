@@ -37,8 +37,3 @@
 # Reviewers Checklist: 
 - [ ] PR properly formatted and author checklist completed 
 - [ ] Internal team review of code completed
-
-
-
-https://github.com/shahzad-niazi/mytest/blob/main/.github/PULL_REQUEST_TEMPLATE.md
-https://github.com/shahzad-niazi/mytest/blob/main/.github/workflows/pr-lint.yml
