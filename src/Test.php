@@ -30,4 +30,9 @@ class Test {
     {
         return 22222;
     }
+    
+    public function ddff(): int
+    {
+        return 22222;
+    }
 }
