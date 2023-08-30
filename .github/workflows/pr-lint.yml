@@ -4,7 +4,7 @@ on:
     types: [edited, opened, synchronize, reopened]
 
 jobs:
-  pr-title:
+  pr-format:
     runs-on: ubuntu-latest
     steps:
       - name: PR Title
