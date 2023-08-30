@@ -4,7 +4,7 @@ on:
     types: [edited, opened, synchronize, reopened]
 
 jobs:
-  pr-formate:
+  pr-title:
     runs-on: ubuntu-latest
     steps:
       - name: PR Title
@@ -12,10 +12,66 @@ jobs:
         with:
           regex: '(((?<!([A-Z]{1,10})-?)[A-Z]+-\d+)|DEV-EXPERIENCE|PHP-UPGRADE|CI-FIX)+:' # Regex the title should match.
           github_token: ${{ github.token }}
+  pr-description:
+    runs-on: ubuntu-latest
+    steps:
       - name: PR Description
         uses: dekinderfiets/pr-description-enforcer@f6a858878d694ff5b2760380fbcd21129030c5dd # 0.0.1
         with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'         
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+  task-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR Checklist
+        uses: mheap/require-checklist-action@v1
+        with:
+          requireChecklist: true # If this is true and there are no checklists detected, the action will fail
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  pr-title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR Title
+        uses: deepakputhraya/action-pr-title@master
+        with:
+          regex: '(((?<!([A-Z]{1,10})-?)[A-Z]+-\d+)|DEV-EXPERIENCE|PHP-UPGRADE|CI-FIX)+:' # Regex the title should match.
+          github_token: ${{ github.token }}
+  pr-description:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR Description
+        uses: dekinderfiets/pr-description-enforcer@f6a858878d694ff5b2760380fbcd21129030c5dd # 0.0.1
+        with:
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+  task-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR Checklist
+        uses: mheap/require-checklist-action@v1
+        with:
+          requireChecklist: true # If this is true and there are no checklists detected, the action will fail
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  pr-title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR Title
+        uses: deepakputhraya/action-pr-title@master
+        with:
+          regex: '(((?<!([A-Z]{1,10})-?)[A-Z]+-\d+)|DEV-EXPERIENCE|PHP-UPGRADE|CI-FIX)+:' # Regex the title should match.
+          github_token: ${{ github.token }}
+  pr-description:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR Description
+        uses: dekinderfiets/pr-description-enforcer@f6a858878d694ff5b2760380fbcd21129030c5dd # 0.0.1
+        with:
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+  task-check:
+    runs-on: ubuntu-latest
+    steps:
       - name: PR Checklist
         uses: mheap/require-checklist-action@v1
         with:
